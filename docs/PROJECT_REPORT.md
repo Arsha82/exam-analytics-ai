@@ -1,10 +1,6 @@
 # 📋 PYQ Analyzer — Comprehensive Project Report
 
-> **Project**: PYQ Analyzer — Multi-Agent Question Paper Intelligence & Adaptive Testing System  
-> **Location**: `d:\ME\B.Tech\s7\SQPP\PYQ Analyzer`  
-> **Course Context**: B.Tech Semester 7 — SQPP (Software Quality & Project Planning)  
-> **Report Generated**: 2026-09-28
-
+> **Project**: PYQ Analyzer — Multi-Agent Question Paper Intelligence & Adaptive Testing System 
 ---
 
 ## 1. Project Overview
