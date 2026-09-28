@@ -55,7 +55,7 @@ flowchart TD
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 exam-analytics-ai/
