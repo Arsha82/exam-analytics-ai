@@ -1,22 +1,22 @@
-# 📋 PYQ Analyzer — Comprehensive Project Report
+# Exam Analytics AI : Comprehensive Project Report
 
-> **Project**: PYQ Analyzer — Multi-Agent Question Paper Intelligence & Adaptive Testing System 
+> **Project**: Exam Analytics AI — Multi-Agent Question Paper Intelligence & Adaptive Testing System 
 ---
 
 ## 1. Project Overview
 
-PYQ Analyzer is a **full-stack, multi-agent AI system** that ingests scanned Previous Year Question papers (PDFs/images), extracts and structures questions via OCR, maps them to syllabus units, detects statistical patterns and duplicates, generates predicted exam papers with rubric-based grading checklists, evaluates student answer sheets, and maintains a per-student mastery profile — all powered by **locally-hosted LLMs via Ollama**.
+Exam Analytics AI is a **full-stack, multi-agent AI system** that ingests scanned Previous Year Question papers (PDFs/images), extracts and structures questions via OCR, maps them to syllabus units, detects statistical patterns and duplicates, generates predicted exam papers with rubric-based grading checklists, evaluates student answer sheets, and maintains a per-student mastery profile — all powered by **locally-hosted LLMs via Ollama**.
 
 ```mermaid
 flowchart LR
-    A["📄 Upload Paper<br/>(PDF / Image / ZIP)"] --> B["🔍 OCR Agent<br/>Unlimited-OCR"]
-    B --> B2["📐 Boundary Agent<br/>Gemma 4"]
-    B2 --> C["🧩 Structuring Agent<br/>Gemma 4"]
-    C --> D["📚 Syllabus Agent<br/>ChromaDB + Gemma 4"]
-    D --> E["📊 Pattern Agent<br/>NumPy + Embeddings"]
-    E --> F["🎯 Prediction Agent<br/>Gemma 4"]
-    F --> G["✅ Evaluation Agent<br/>LLM-as-Judge"]
-    G --> H["📈 Mastery Map<br/>EMA Scoring"]
+    A["Upload Paper<br/>(PDF / Image / ZIP)"] --> B["OCR Agent<br/>Unlimited-OCR"]
+    B --> B2["Boundary Agent<br/>Gemma 4"]
+    B2 --> C["Structuring Agent<br/>Gemma 4"]
+    C --> D["Syllabus Agent<br/>ChromaDB + Gemma 4"]
+    D --> E["Pattern Agent<br/>NumPy + Embeddings"]
+    E --> F["Prediction Agent<br/>Gemma 4"]
+    F --> G["Evaluation Agent<br/>LLM-as-Judge"]
+    G --> H["Mastery Map<br/>EMA Scoring"]
 ```
 
 ---
@@ -48,9 +48,6 @@ flowchart LR
 | **HTTP Client** | Axios 1.20 | API communication |
 | **Charting** | Recharts 3.10 + D3 7.9 | Data visualization |
 | **Linting** | Oxlint 1.81 | Fast Rust-based linter |
-
-> [!IMPORTANT]
-> The frontend has been **scaffolded** (Vite + React template initialized, dependencies installed, `dist/` built) but contains **no application source code** yet — the `src/` directory does not exist. All backend APIs are fully implemented and ready for frontend integration.
 
 ### 2.3 Dev-Ops & Configuration
 
@@ -84,15 +81,15 @@ All agents inherit from [`BaseAgent`](file:///d:/ME/B.Tech/s7/SQPP/PYQ%20Analyze
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                    Ollama Model Routing                      │
+│                    Ollama Model Routing                     │
 ├─────────────────────┬───────────────────────────────────────┤
-│ OCR (Vision)        │ Unlimited-OCR-GGUF:Q4_K_M            │
+│ OCR (Vision)        │ Unlimited-OCR-GGUF:Q4_K_M             │
 │ Vision Fallback     │ moondream:latest                      │
 │ Structuring         │ huihui_ai/gemma-4-abliterated:e4b     │
 │ Syllabus            │ huihui_ai/gemma-4-abliterated:e4b     │
 │ Prediction          │ huihui_ai/gemma-4-abliterated:e4b     │
 │ Evaluation          │ huihui_ai/gemma-4-abliterated:e4b     │
-│ Embeddings          │ nomic-embed-text:latest                │
+│ Embeddings          │ nomic-embed-text:latest               │
 └─────────────────────┴───────────────────────────────────────┘
 ```
 
