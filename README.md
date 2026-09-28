@@ -1,43 +1,43 @@
-# 🎓 Exam Analytics AI (PYQ Analyzer)
+# Exam Analytics AI 
 
 > **Multi-Agent Question Paper Intelligence & Adaptive Testing System**  
 > Ingests scanned Previous Year Question papers (PDFs/images), extracts and structures questions via OCR, maps questions to syllabus units, discovers statistical patterns and cognitive duplicates, generates predicted exam papers with rubric grading checklists, evaluates student answers, and maintains per-student mastery maps — **all powered by locally-hosted LLMs via Ollama**.
 
 ---
 
-## 🌟 Key Features
+## Key Features
 
-- **🔍 Multi-Modal OCR Pipeline**: Ingests multi-page PDFs, scans, and images via adaptive whitespace banding with `Unlimited-OCR` (GGUF) and `moondream` vision fallback.
-- **📐 Document Boundary Detection**: Identifies merged multi-exam bundles and automatically partitions them into distinct exam sessions using `gemma-4-abliterated:e4b`.
-- **🧩 Question Structuring & Taxonomy**: Standardizes questions, parts, subparts, marks, question types, and Bloom's taxonomy levels into clean structured schemas.
-- **📚 Syllabus Correlation**: Indexes course syllabus topics into **ChromaDB** using `nomic-embed-text` embeddings, performing vector similarity retrieval with LLM verification.
-- **📊 Pattern & Trend Analysis**: Computes topic frequency distributions, historical weightage trends, and cognitive duplicate clusters (both verbatim and paraphrased/twisted questions).
-- **🎯 Predictive Exam Generator**: Generates high-probability future exam papers respecting syllabus constraints, unit distributions, and trend multipliers, complete with rubric-based evaluation checklists.
-- **✅ LLM-as-a-Judge Evaluation**: Scores student answer submissions against rubric checklists with step-by-step reasoning and actionable feedback.
-- **📈 Adaptive Mastery Tracking**: Updates student topic-level mastery scores using Exponential Moving Average (EMA) to drive personalized revision paths.
+- Multi-Modal OCR Pipeline: Ingests multi-page PDFs, scans, and images via adaptive whitespace banding with `Unlimited-OCR` (GGUF) and `moondream` vision fallback.
+- Document Boundary Detection: Identifies merged multi-exam bundles and automatically partitions them into distinct exam sessions using `gemma-4-abliterated:e4b`.
+- Question Structuring & Taxonomy: Standardizes questions, parts, subparts, marks, question types, and Bloom's taxonomy levels into clean structured schemas.
+- Syllabus Correlation: Indexes course syllabus topics into **ChromaDB** using `nomic-embed-text` embeddings, performing vector similarity retrieval with LLM verification.
+- Pattern & Trend Analysis: Computes topic frequency distributions, historical weightage trends, and cognitive duplicate clusters (both verbatim and paraphrased/twisted questions).
+- Predictive Exam Generator: Generates high-probability future exam papers respecting syllabus constraints, unit distributions, and trend multipliers, complete with rubric-based evaluation checklists.
+- LLM-as-a-Judge Evaluation: Scores student answer submissions against rubric checklists with step-by-step reasoning and actionable feedback.
+- Adaptive Mastery Tracking: Updates student topic-level mastery scores using Exponential Moving Average (EMA) to drive personalized revision paths.
 
 ---
 
-## 🏗️ Multi-Agent Architecture
+## Multi-Agent Architecture
 
 ```mermaid
 flowchart TD
     subgraph Ingestion ["1. Document Ingestion"]
-        A["📄 Exam Paper<br/>(PDF / Image / Archive)"] --> B["🔍 OcrAgent<br/>Unlimited-OCR / pypdfium2"]
-        B --> B2["📐 BoundaryAgent<br/>Gemma 4 Splitter"]
+        A["Exam Paper<br/>(PDF / Image / Archive)"] --> B["OcrAgent<br/>Unlimited-OCR / pypdfium2"]
+        B --> B2["BoundaryAgent<br/>Gemma 4 Splitter"]
     end
 
     subgraph Intelligence ["2. Multi-Agent Processing"]
-        B2 --> C["🧩 StructuringAgent<br/>Taxonomy & JSON Parser"]
-        C --> D["📚 SyllabusAgent<br/>ChromaDB + Gemma 4 Verification"]
-        D --> E["📊 PatternAnalysisAgent<br/>Trend Regression & Duplicate Detection"]
-        E --> F["🎯 PredictionAgent<br/>Exam Paper Generator & Rubrics"]
+        B2 --> C["StructuringAgent<br/>Taxonomy & JSON Parser"]
+        C --> D["SyllabusAgent<br/>ChromaDB + Gemma 4 Verification"]
+        D --> E["PatternAnalysisAgent<br/>Trend Regression & Duplicate Detection"]
+        E --> F["PredictionAgent<br/>Exam Paper Generator & Rubrics"]
     end
 
     subgraph Assessment ["3. Evaluation & Mastery"]
-        F --> G["📝 Student Answer Submission"]
-        G --> H["✅ EvaluationAgent<br/>Rubric-Based LLM-as-Judge"]
-        H --> I["📈 Mastery Engine<br/>EMA Topic Tracking"]
+        F --> G["Student Answer Submission"]
+        G --> H["EvaluationAgent<br/>Rubric-Based LLM-as-Judge"]
+        H --> I["Mastery Engine<br/>EMA Topic Tracking"]
     end
 ```
 
@@ -85,7 +85,7 @@ exam-analytics-ai/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Prerequisites
 
@@ -142,7 +142,7 @@ The frontend application will be accessible at [http://localhost:5173](http://lo
 
 ---
 
-## 📡 API Endpoints Overview
+## API Endpoints Overview
 
 | Method | Endpoint | Description |
 |---|---|---|
@@ -158,7 +158,7 @@ The frontend application will be accessible at [http://localhost:5173](http://lo
 
 ---
 
-## 🧪 Testing
+## Testing
 
 Execute backend test suites:
 
@@ -170,12 +170,12 @@ python test_ocr_pipeline.py
 
 ---
 
-## 📄 Documentation
+## Documentation
 
 For full mathematical formulations, agent flowcharts, schema definitions, and academic report context, see [PROJECT_REPORT.md](docs/PROJECT_REPORT.md).
 
 ---
 
-## ⚖️ License
+## License
 
 Distributed under the [MIT License](LICENSE).
