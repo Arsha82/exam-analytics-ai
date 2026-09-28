@@ -1,0 +1,61 @@
+# Python & Virtual Environments
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# SQLite & Local Databases
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+
+# Vector Store & Local AI Data
+chroma_data/
+backend/chroma_data/
+
+# Runtime Storage
+backend/uploads/*
+!backend/uploads/.gitkeep
+backend/reports/*
+!backend/reports/.gitkeep
+backend/assets/*
+!backend/assets/.gitkeep
+
+# Node & Frontend Build Artifacts
+node_modules/
+dist/
+dist-ssr/
+*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment Variables & Secrets
+.env
+.env.*
+!.env.example
+
+# Temporary & Lock Files
+~$*.docx
+~$*.xlsx
+~$*.pptx
+*.tmp
+
+# IDE & OS Files
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Celery & Logs
+celerybeat-schedule*
+*.log
