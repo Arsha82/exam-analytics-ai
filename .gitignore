@@ -1,61 +1,139 @@
-# Python & Virtual Environments
-.venv/
-venv/
-env/
+# ==============================================================================
+# PYQ Analyzer - Root .gitignore
+# ==============================================================================
+
+# --- Large Archives & Bundles ---
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+/PYQ Analyzer.zip
+
+# --- Documentation, Reports & Notes ---
+docs/
+doc/
+*.docx
+*.pptx
+*.pdf
+PRD.md
+CLAUDE.md
+*implementation_plan*.md
+
+
+# --- Local Environment & Secrets ---
+.env
+.env.*
+!.env.example
+*.env.local
+
+# --- Python & Virtual Environments ---
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
 .Python
+backend/.venv/
+.venv/
+venv/
+env/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
 
-# SQLite & Local Databases
-*.db
-*.db-journal
-*.sqlite
-*.sqlite3
-
-# Vector Store & Local AI Data
-chroma_data/
-backend/chroma_data/
-
-# Runtime Storage
-backend/uploads/*
-!backend/uploads/.gitkeep
-backend/reports/*
-!backend/reports/.gitkeep
-backend/assets/*
-!backend/assets/.gitkeep
-
-# Node & Frontend Build Artifacts
+# --- Node & Frontend ---
+frontend/node_modules/
 node_modules/
+frontend/dist/
+frontend/dist-ssr/
 dist/
 dist-ssr/
-*.local
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+.eslintcache
+*.tsbuildinfo
 
-# Environment Variables & Secrets
-.env
-.env.*
-!.env.example
+# --- Runtime Data, Databases & Local Storage ---
+# SQLite databases, journals, WAL, SHM, and backups
+*.db
+*.db-shm
+*.db-wal
+*.db-journal
+*.sqlite
+*.sqlite3
+backend/pyq_analyzer.db*
+backend/pyq_analyzer.v1-backup.db*
 
-# Temporary & Lock Files
+# Vector Database (ChromaDB)
+backend/chroma_data/
+chroma_data/
+
+# Runtime Storage (transcriptions, source PDFs, notes, lessons, jobs)
+backend/storage/
+storage/
+
+# Runtime Uploads & Generated Reports / Assets
+backend/uploads/*
+backend/reports/*
+backend/assets/*
+!backend/uploads/.gitkeep
+!backend/reports/.gitkeep
+!backend/assets/.gitkeep
+!backend/storage/.gitkeep
+
+# Process run artifacts (PID files, background server logs from start.ps1 / start.sh)
+.run/
+*.log
+
+# CodeGraph and Agent/IDE metadata
+.codegraph/
+.claude/
+
+# Temporary & Office Lock Files
 ~$*.docx
 ~$*.xlsx
 ~$*.pptx
 *.tmp
-
-# IDE & OS Files
-.vscode/*
-!.vscode/extensions.json
-.idea/
-.DS_Store
-Thumbs.db
 *.swp
 *.swo
 
-# Celery & Logs
-celerybeat-schedule*
-*.log
+# --- IDEs & Operating System Artifacts ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+.idea/
+*.sublime-project
+*.sublime-workspace
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/settings.json
+
+
