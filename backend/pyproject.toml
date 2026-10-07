@@ -1,40 +1,27 @@
 [project]
 name = "pyq-analyzer-backend"
-version = "0.1.0"
-description = "PYQ Analyzer — Multi-Agent Question Paper Intelligence & Adaptive Testing System"
-readme = "README.md"
+version = "0.2.0"
+description = "PYQ Analyzer — finds, reads and verifies past question papers; insights, practice and lessons"
 requires-python = ">=3.11"
 dependencies = [
     "fastapi>=0.115.0",
     "uvicorn[standard]>=0.30.0",
     "sqlalchemy>=2.0.0",
+    "aiosqlite>=0.20.0",
     "alembic>=1.13.0",
     "pydantic>=2.0.0",
     "pydantic-settings>=2.0.0",
-    "celery[redis]>=5.4.0",
-    "redis>=5.0.0",
-    "chromadb>=0.5.0",
-    "sentence-transformers>=3.0.0",
     "python-multipart>=0.0.9",
     "httpx>=0.27.0",
     "pillow>=10.0.0",
-    "opencv-python-headless>=4.9.0",
-    "pytesseract>=0.3.10",
-    "pdf2image>=1.17.0",
-    "weasyprint>=62.0",
+    "pypdfium2>=4.30.0",
+    "numpy>=1.26.0",
     "matplotlib>=3.9.0",
-    "seaborn>=0.13.0",
-    "pandas>=2.2.0",
-    "scikit-learn>=1.5.0",
-    "statsmodels>=0.14.0",
-    "aiosqlite>=0.20.0",
-    "websockets>=13.0",
+    "chromadb>=0.5.0",  # classic (v1) pages only
 ]
 
 [project.optional-dependencies]
 dev = [
     "pytest>=8.0.0",
     "pytest-asyncio>=0.23.0",
-    "httpx>=0.27.0",
-    "ruff>=0.5.0",
 ]

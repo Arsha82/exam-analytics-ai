@@ -1,0 +1,345 @@
+{
+  "code": "ADT308",
+  "university": "KTU",
+  "university_name": "APJ Abdul Kalam Technological University",
+  "scheme": "2019",
+  "title": "Comprehensive Course Work",
+  "title_variants": [],
+  "code_variants": [
+    "ADT308",
+    "ADT 308"
+  ],
+  "semester": 6,
+  "slot": null,
+  "credits": null,
+  "template_id": "ktu2019_mcq_50",
+  "first_exam": {
+    "year": 2020,
+    "month": 12
+  },
+  "sources": {
+    "dspace": [
+      "http://202.88.225.92/xmlui"
+    ],
+    "pages": []
+  },
+  "generated": true,
+  "provisional": false,
+  "syllabus_source": "derived from past papers",
+  "modules": [
+    {
+      "no": 1,
+      "title": "Operating Systems and Machine Learning",
+      "syllabus": "",
+      "topics": [
+        {
+          "id": "adt308.m1.cpu_scheduling_and_process_management",
+          "name": "CPU Scheduling and Process Management",
+          "keywords": [
+            "scheduling algorithm",
+            "context switches",
+            "LRTF",
+            "flow time"
+          ]
+        },
+        {
+          "id": "adt308.m1.memory_management_and_virtual_memory",
+          "name": "Memory Management and Virtual Memory",
+          "keywords": [
+            "page fault",
+            "page replacement",
+            "virtual address",
+            "page table"
+          ]
+        },
+        {
+          "id": "adt308.m1.deadlocks_and_storage_management",
+          "name": "Deadlocks and Storage Management",
+          "keywords": [
+            "deadlock prevention",
+            "disk pack",
+            "buffer overflow"
+          ]
+        },
+        {
+          "id": "adt308.m1.supervised_learning_and_classification",
+          "name": "Supervised Learning and Classification",
+          "keywords": [
+            "classification",
+            "SVM",
+            "decision trees",
+            "supervised learning"
+          ]
+        },
+        {
+          "id": "adt308.m1.unsupervised_learning_and_dimensionality",
+          "name": "Unsupervised Learning and Dimensionality Reduction",
+          "keywords": [
+            "PCA",
+            "k-means clustering",
+            "unlabelled data"
+          ]
+        },
+        {
+          "id": "adt308.m1.model_training_and_evaluation",
+          "name": "Model Training and Evaluation",
+          "keywords": [
+            "confusion matrix",
+            "gradient descent",
+            "learning rate",
+            "bagging"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 2,
+      "title": "Data Structures",
+      "syllabus": "",
+      "topics": [
+        {
+          "id": "adt308.m2.linear_data_structures_arrays_stacks_and",
+          "name": "Linear Data Structures: Arrays, Stacks, and Queues",
+          "keywords": [
+            "stack",
+            "queue",
+            "postfix",
+            "deque"
+          ]
+        },
+        {
+          "id": "adt308.m2.linked_lists",
+          "name": "Linked Lists",
+          "keywords": [
+            "singly linked list",
+            "pointers",
+            "doubly linked list"
+          ]
+        },
+        {
+          "id": "adt308.m2.trees_and_binary_search_trees",
+          "name": "Trees and Binary Search Trees",
+          "keywords": [
+            "binary tree",
+            "binary search tree",
+            "heap",
+            "traversal"
+          ]
+        },
+        {
+          "id": "adt308.m2.graphs",
+          "name": "Graphs",
+          "keywords": [
+            "BFS",
+            "DFS",
+            "adjacency matrix",
+            "shortest path"
+          ]
+        },
+        {
+          "id": "adt308.m2.searching_and_sorting",
+          "name": "Searching and Sorting",
+          "keywords": [
+            "binary search",
+            "selection sort",
+            "quick sort"
+          ]
+        },
+        {
+          "id": "adt308.m2.hashing",
+          "name": "Hashing",
+          "keywords": [
+            "hash table",
+            "linear probing",
+            "collision"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 3,
+      "title": "Database Management Systems",
+      "syllabus": "",
+      "topics": [
+        {
+          "id": "adt308.m3.relational_model_and_database_design",
+          "name": "Relational Model and Database Design",
+          "keywords": [
+            "relational data model",
+            "degree of a relation",
+            "functional dependencies",
+            "candidate keys"
+          ]
+        },
+        {
+          "id": "adt308.m3.entity_relationship_data_modeling",
+          "name": "Entity-Relationship Data Modeling",
+          "keywords": [
+            "one to many relationships",
+            "minimum number of tables",
+            "top-down approach",
+            "metadata"
+          ]
+        },
+        {
+          "id": "adt308.m3.structured_query_language_sql",
+          "name": "Structured Query Language (SQL)",
+          "keywords": [
+            "DML command",
+            "ALTER",
+            "self-join",
+            "aggregate function"
+          ]
+        },
+        {
+          "id": "adt308.m3.normalization_and_relational_decompositi",
+          "name": "Normalization and Relational Decomposition",
+          "keywords": [
+            "normal form",
+            "3NF",
+            "properties of a decomposition"
+          ]
+        },
+        {
+          "id": "adt308.m3.storage_indexing_and_distributed_databas",
+          "name": "Storage, Indexing, and Distributed Databases",
+          "keywords": [
+            "B+ tree",
+            "location transparency",
+            "distributed databases"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 4,
+      "title": "Database Management Systems",
+      "syllabus": "",
+      "topics": [
+        {
+          "id": "adt308.m4.relational_data_model_and_integrity_cons",
+          "name": "Relational Data Model and Integrity Constraints",
+          "keywords": [
+            "integrity constraint",
+            "referencing relation",
+            "key",
+            "snapshot"
+          ]
+        },
+        {
+          "id": "adt308.m4.sql_and_relational_query_languages",
+          "name": "SQL and Relational Query Languages",
+          "keywords": [
+            "SQL",
+            "FROM clause",
+            "WHERE clause",
+            "aggregate functions"
+          ]
+        },
+        {
+          "id": "adt308.m4.database_design_and_normalization",
+          "name": "Database Design and Normalization",
+          "keywords": [
+            "functional dependency",
+            "2NF",
+            "3NF",
+            "highest normal form"
+          ]
+        },
+        {
+          "id": "adt308.m4.entity_relationship_er_modeling",
+          "name": "Entity-Relationship (ER) Modeling",
+          "keywords": [
+            "E-R diagram",
+            "attribute",
+            "entities",
+            "one-to-many"
+          ]
+        },
+        {
+          "id": "adt308.m4.transaction_processing_and_concurrency_c",
+          "name": "Transaction Processing and Concurrency Control",
+          "keywords": [
+            "TRANSACTION",
+            "Commit",
+            "ROLLBACK"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 5,
+      "title": "Data Science and Machine Learning",
+      "syllabus": "",
+      "topics": [
+        {
+          "id": "adt308.m5.data_science_foundations_and_preprocessi",
+          "name": "Data Science Foundations and Preprocessing",
+          "keywords": [
+            "DataFrame",
+            "unstructured",
+            "preprocessing",
+            "coding"
+          ]
+        },
+        {
+          "id": "adt308.m5.supervised_learning_regression_and_class",
+          "name": "Supervised Learning: Regression and Classification",
+          "keywords": [
+            "Linear Regression",
+            "Support Vector Machine",
+            "decision trees",
+            "gradient descent"
+          ]
+        },
+        {
+          "id": "adt308.m5.probabilistic_and_generative_models",
+          "name": "Probabilistic and Generative Models",
+          "keywords": [
+            "Bayes' Theorem",
+            "Naïve Bayes",
+            "generative model"
+          ]
+        },
+        {
+          "id": "adt308.m5.ensemble_learning",
+          "name": "Ensemble Learning",
+          "keywords": [
+            "Random Forest",
+            "Gradient Boosting",
+            "AdaBoost",
+            "Mean Squared Error"
+          ]
+        },
+        {
+          "id": "adt308.m5.unsupervised_learning_and_clustering",
+          "name": "Unsupervised Learning and Clustering",
+          "keywords": [
+            "K-means",
+            "Hierarchical Clustering",
+            "noise and outliers"
+          ]
+        },
+        {
+          "id": "adt308.m5.model_evaluation_and_performance_metrics",
+          "name": "Model Evaluation and Performance Metrics",
+          "keywords": [
+            "AUC-ROC",
+            "Mean Squared Error"
+          ]
+        },
+        {
+          "id": "adt308.m5.data_warehousing_and_data_mining",
+          "name": "Data Warehousing and Data Mining",
+          "keywords": [
+            "knowledge discovery",
+            "heterogeneous databases",
+            "E-R model"
+          ]
+        }
+      ]
+    }
+  ],
+  "branch": "AD",
+  "exam_format": "50 one-mark MCQs, four options, five sections of ten (one per earlier course)"
+}

@@ -1,0 +1,216 @@
+{
+  "code": "ADT453",
+  "university": "KTU",
+  "university_name": "APJ Abdul Kalam Technological University",
+  "scheme": "2019",
+  "title": "Information Extraction and Retrieval",
+  "title_variants": [],
+  "code_variants": [
+    "ADT453",
+    "ADT 453"
+  ],
+  "semester": 7,
+  "slot": null,
+  "credits": null,
+  "template_id": "ktu2019_theory_100",
+  "first_exam": {
+    "year": 2020,
+    "month": 12
+  },
+  "sources": {
+    "dspace": [
+      "http://202.88.225.92/xmlui"
+    ],
+    "pages": []
+  },
+  "generated": true,
+  "provisional": false,
+  "syllabus_source": "http://202.88.225.92/xmlui/bitstream/handle/1/9028/ADT453%20INFORMATION%20EXTRACTION%20AND%20RETRIEVAL%2c%20NOVEMBER%202024.PDF?sequence=1",
+  "modules": [
+    {
+      "no": 1,
+      "title": "Introduction to Information Retrieval and Document Representation",
+      "syllabus": "Information retrieval definition, trends in IR, data retrieval vs information retrieval, taxonomy of IR models, formal characterization of IR models, logical view of documents.",
+      "topics": [
+        {
+          "id": "adt453.m1.information_retrieval_basics_and_trends",
+          "name": "Information Retrieval Basics and Trends",
+          "keywords": [
+            "information retrieval",
+            "data retrieval",
+            "trends in IR"
+          ]
+        },
+        {
+          "id": "adt453.m1.formal_characterization_and_taxonomy_of_",
+          "name": "Formal Characterization and Taxonomy of IR Models",
+          "keywords": [
+            "formal characterization",
+            "taxonomy of IR models"
+          ]
+        },
+        {
+          "id": "adt453.m1.logical_view_of_a_document",
+          "name": "Logical View of a Document",
+          "keywords": [
+            "logical view",
+            "document representation"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 2,
+      "title": "IR Models and Retrieval Evaluation",
+      "syllabus": "Classic IR models (Boolean and Vector models), Boolean queries, alternative algebraic IR models, retrieval evaluation (precision and recall).",
+      "topics": [
+        {
+          "id": "adt453.m2.classic_ir_models",
+          "name": "Classic IR Models",
+          "keywords": [
+            "classic IR models",
+            "boolean model",
+            "vector model"
+          ]
+        },
+        {
+          "id": "adt453.m2.boolean_queries",
+          "name": "Boolean Queries",
+          "keywords": [
+            "Boolean query",
+            "machine learning",
+            "classification"
+          ]
+        },
+        {
+          "id": "adt453.m2.alternative_algebraic_ir_models",
+          "name": "Alternative Algebraic IR Models",
+          "keywords": [
+            "alternative algebraic IR model",
+            "algebraic models"
+          ]
+        },
+        {
+          "id": "adt453.m2.retrieval_evaluation_precision_and_recal",
+          "name": "Retrieval Evaluation: Precision and Recall",
+          "keywords": [
+            "retrieval evaluation",
+            "precision",
+            "recall"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 3,
+      "title": "Query Operations, Evaluation Benchmarks, and Test Collections",
+      "syllabus": "Query operations, query protocol, single word queries, phrase and proximity queries, TREC evaluation measures, ISI and CACM test collections.",
+      "topics": [
+        {
+          "id": "adt453.m3.queries_and_query_protocols",
+          "name": "Queries and Query Protocols",
+          "keywords": [
+            "query protocol",
+            "single word queries",
+            "phrase and proximity"
+          ]
+        },
+        {
+          "id": "adt453.m3.trec_evaluation_measures",
+          "name": "TREC Evaluation Measures",
+          "keywords": [
+            "TREC",
+            "evaluation measures"
+          ]
+        },
+        {
+          "id": "adt453.m3.test_collections_isi_and_cacm",
+          "name": "Test Collections (ISI and CACM)",
+          "keywords": [
+            "ISI collection",
+            "CACM collection"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 4,
+      "title": "Searching Techniques, Metadata, and Text Formats",
+      "syllabus": "Sequential searching, metadata, different text formats, markup languages.",
+      "topics": [
+        {
+          "id": "adt453.m4.sequential_searching",
+          "name": "Sequential Searching",
+          "keywords": [
+            "sequential searching"
+          ]
+        },
+        {
+          "id": "adt453.m4.metadata_and_text_formats",
+          "name": "Metadata and Text Formats",
+          "keywords": [
+            "meta data",
+            "text formats"
+          ]
+        },
+        {
+          "id": "adt453.m4.markup_languages",
+          "name": "Markup Languages",
+          "keywords": [
+            "mark-up languages",
+            "XML",
+            "HTML"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 5,
+      "title": "Web Search, Crawling, and System Architecture",
+      "syllabus": "Characteristics of the Web, web crawling, web directories, centralized and distributed architectures, PageRank algorithm, user interfaces in web search.",
+      "topics": [
+        {
+          "id": "adt453.m5.web_characteristics_and_web_directories",
+          "name": "Web Characteristics and Web Directories",
+          "keywords": [
+            "characteristics of web",
+            "web directories"
+          ]
+        },
+        {
+          "id": "adt453.m5.web_crawlers",
+          "name": "Web Crawlers",
+          "keywords": [
+            "crawler",
+            "web crawling"
+          ]
+        },
+        {
+          "id": "adt453.m5.search_engine_architectures",
+          "name": "Search Engine Architectures",
+          "keywords": [
+            "centralized architecture",
+            "distributed architecture"
+          ]
+        },
+        {
+          "id": "adt453.m5.pagerank_algorithm",
+          "name": "PageRank Algorithm",
+          "keywords": [
+            "page ranking algorithm",
+            "PageRank"
+          ]
+        },
+        {
+          "id": "adt453.m5.user_interfaces_in_web_search",
+          "name": "User Interfaces in Web Search",
+          "keywords": [
+            "user interfaces",
+            "web search"
+          ]
+        }
+      ]
+    }
+  ],
+  "branch": "AD"
+}

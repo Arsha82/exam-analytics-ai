@@ -1,0 +1,215 @@
+{
+  "code": "ADT402",
+  "university": "KTU",
+  "university_name": "APJ Abdul Kalam Technological University",
+  "scheme": "2019",
+  "title": "Business Analytics",
+  "title_variants": [],
+  "code_variants": [
+    "ADT402",
+    "ADT 402"
+  ],
+  "semester": 8,
+  "slot": null,
+  "credits": null,
+  "template_id": "ktu2019_theory_100",
+  "first_exam": {
+    "year": 2020,
+    "month": 12
+  },
+  "sources": {
+    "dspace": [
+      "http://202.88.225.92/xmlui"
+    ],
+    "pages": []
+  },
+  "generated": true,
+  "provisional": false,
+  "syllabus_source": "http://202.88.225.92/xmlui/bitstream/handle/1/8990/ADT402%20BUSINESS%20ANALYTICS%2c%20AUGUST%202024.PDF?sequence=1",
+  "modules": [
+    {
+      "no": 1,
+      "title": "Introduction to Business Analytics & Data Preparation",
+      "syllabus": "Role of Business Analytics in today's world, types of business analytics, portfolio stress testing, data cleaning techniques, types of data for business analytics, analytics tools (licensed vs open source).",
+      "topics": [
+        {
+          "id": "adt402.m1.introduction_and_types_of_business_analy",
+          "name": "Introduction and Types of Business Analytics",
+          "keywords": [
+            "role of business analytics",
+            "types of business analytics",
+            "portfolio stress testing"
+          ]
+        },
+        {
+          "id": "adt402.m1.data_cleaning",
+          "name": "Data Cleaning",
+          "keywords": [
+            "data cleaning",
+            "techniques in data cleaning"
+          ]
+        },
+        {
+          "id": "adt402.m1.types_of_data_in_business_analytics",
+          "name": "Types of Data in Business Analytics",
+          "keywords": [
+            "types of data",
+            "data for business analytics"
+          ]
+        },
+        {
+          "id": "adt402.m1.analytics_tools",
+          "name": "Analytics Tools",
+          "keywords": [
+            "licensed vs open source",
+            "analytics tools"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 2,
+      "title": "Descriptive Statistics, Probability & Time Series Forecasting",
+      "syllabus": "Measures of central tendency, probability distributions in BA, normal distribution, time series analysis models and techniques, smoothing techniques, data collection and analysis in forecasting.",
+      "topics": [
+        {
+          "id": "adt402.m2.measures_of_central_tendency",
+          "name": "Measures of Central Tendency",
+          "keywords": [
+            "measures of central tendency",
+            "mean",
+            "median"
+          ]
+        },
+        {
+          "id": "adt402.m2.probability_distributions_in_business_an",
+          "name": "Probability Distributions in Business Analytics",
+          "keywords": [
+            "probability distributions",
+            "normal distribution",
+            "standard deviation"
+          ]
+        },
+        {
+          "id": "adt402.m2.time_series_analysis_and_forecasting",
+          "name": "Time Series Analysis and Forecasting",
+          "keywords": [
+            "time series analysis",
+            "smoothing techniques",
+            "forecasting models"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 3,
+      "title": "Data Visualization with Tableau",
+      "syllabus": "Visualizing data in Tableau, joining and blending of data, types of visualization charts and exporting, sorting mechanisms in Tableau, operators and operator precedence, Gantt charts and histograms.",
+      "topics": [
+        {
+          "id": "adt402.m3.data_blending_and_joining_in_tableau",
+          "name": "Data Blending and Joining in Tableau",
+          "keywords": [
+            "joining",
+            "blending of data",
+            "visualize data"
+          ]
+        },
+        {
+          "id": "adt402.m3.tableau_charts_and_visualizations",
+          "name": "Tableau Charts and Visualizations",
+          "keywords": [
+            "visualization charts",
+            "exporting charts",
+            "Gantt chart",
+            "histogram"
+          ]
+        },
+        {
+          "id": "adt402.m3.tableau_calculations_and_sorting",
+          "name": "Tableau Calculations and Sorting",
+          "keywords": [
+            "sorting mechanisms",
+            "operators",
+            "operator precedence"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 4,
+      "title": "Web Analytics & Sentiment Analysis",
+      "syllabus": "Clickstream data analysis, anonymous and registered users analysis, page tagging issues and resolution measures, sentiment analysis, rule-based approach, decoding customer sentiments from comments.",
+      "topics": [
+        {
+          "id": "adt402.m4.clickstream_and_user_analysis",
+          "name": "Clickstream and User Analysis",
+          "keywords": [
+            "clickstream data analysis",
+            "anonymous and registered users"
+          ]
+        },
+        {
+          "id": "adt402.m4.page_tagging_in_web_analytics",
+          "name": "Page Tagging in Web Analytics",
+          "keywords": [
+            "page tagging",
+            "issues in page tagging",
+            "web analytics"
+          ]
+        },
+        {
+          "id": "adt402.m4.sentiment_analysis",
+          "name": "Sentiment Analysis",
+          "keywords": [
+            "sentimental analysis",
+            "rule-based approach",
+            "customer sentiments from comments"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 5,
+      "title": "Scenario Analysis, Clustering & Business Decision Models",
+      "syllabus": "Factor analysis, decision trees in business analytics, what-if scenario analysis in project management, agglomerative hierarchical clustering, dendrogram with complete linkage, K-Means clustering, segmentation analysis.",
+      "topics": [
+        {
+          "id": "adt402.m5.what_if_scenario_analysis",
+          "name": "What-If Scenario Analysis",
+          "keywords": [
+            "what-if scenario analysis",
+            "project management"
+          ]
+        },
+        {
+          "id": "adt402.m5.hierarchical_and_k_means_clustering",
+          "name": "Hierarchical and K-Means Clustering",
+          "keywords": [
+            "hierarchical clustering",
+            "dendrogram",
+            "complete linkage",
+            "k-means clustering"
+          ]
+        },
+        {
+          "id": "adt402.m5.segmentation_analysis",
+          "name": "Segmentation Analysis",
+          "keywords": [
+            "segmentation analysis",
+            "customer segmentation"
+          ]
+        },
+        {
+          "id": "adt402.m5.factor_analysis_and_decision_trees",
+          "name": "Factor Analysis and Decision Trees",
+          "keywords": [
+            "factor analysis",
+            "decision tree"
+          ]
+        }
+      ]
+    }
+  ],
+  "branch": "AD"
+}

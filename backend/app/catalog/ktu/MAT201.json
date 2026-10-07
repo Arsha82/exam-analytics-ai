@@ -1,0 +1,323 @@
+{
+  "code": "MAT201",
+  "university": "KTU",
+  "university_name": "APJ Abdul Kalam Technological University",
+  "scheme": "2019",
+  "title": "Partial Differential Equations and Complex Analysis",
+  "title_variants": [
+    "Partial Differential Equation and Complex Analysis",
+    "PDE and Complex Analysis",
+    "Partial Differential Equations & Complex Analysis"
+  ],
+  "code_variants": [
+    "MAT201",
+    "MAT 201"
+  ],
+  "semester": 3,
+  "slot": "A",
+  "credits": 4,
+  "ltp": "3-1-0",
+  "template_id": "ktu2019_theory_100",
+  "first_exam": {
+    "year": 2020,
+    "month": 12
+  },
+  "sources": {
+    "dspace": [
+      "http://202.88.225.92/xmlui"
+    ],
+    "pages": [
+      "https://ktunotes.in/ktu-mat201-partial-differential-equations-question-papers/"
+    ]
+  },
+  "syllabus_note": "Module contents as published in the KTU 2019-scheme syllabus; topic split refined against real papers (Dec 2020 - Jun 2026).",
+  "modules": [
+    {
+      "no": 1,
+      "title": "Partial Differential Equations",
+      "syllabus": "Formation of PDEs by elimination of arbitrary constants and functions; equations solvable by direct integration; Lagrange's linear equation; non-linear first order equations (Charpit's method); method of separation of variables.",
+      "topics": [
+        {
+          "id": "mat201.m1.form_const",
+          "name": "Formation of PDE: eliminating arbitrary constants",
+          "keywords": [
+            "form",
+            "eliminating arbitrary constants",
+            "a and b"
+          ]
+        },
+        {
+          "id": "mat201.m1.form_func",
+          "name": "Formation of PDE: eliminating arbitrary functions",
+          "keywords": [
+            "eliminating arbitrary function",
+            "f(",
+            "phi("
+          ]
+        },
+        {
+          "id": "mat201.m1.direct_int",
+          "name": "Solution by direct integration",
+          "keywords": [
+            "direct integration"
+          ]
+        },
+        {
+          "id": "mat201.m1.lagrange",
+          "name": "Lagrange's linear equation (Pp + Qq = R)",
+          "keywords": [
+            "Pp+Qq=R",
+            "Lagrange",
+            "solve the PDE",
+            "subsidiary equations"
+          ]
+        },
+        {
+          "id": "mat201.m1.charpit",
+          "name": "Non-linear first order PDE: Charpit's method",
+          "keywords": [
+            "Charpit",
+            "pq",
+            "non-linear"
+          ]
+        },
+        {
+          "id": "mat201.m1.separation",
+          "name": "Method of separation of variables (first order PDE)",
+          "keywords": [
+            "separation of variables",
+            "u(x,0)"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 2,
+      "title": "One-dimensional Wave and Heat Equations",
+      "syllabus": "One dimensional wave equation: vibrating string, derivation, solution by separation of variables, D'Alembert's solution. One dimensional heat equation: derivation and solution by separation of variables.",
+      "topics": [
+        {
+          "id": "mat201.m2.wave_derivation",
+          "name": "Wave equation: derivation and assumptions",
+          "keywords": [
+            "derive",
+            "wave equation",
+            "assumptions"
+          ]
+        },
+        {
+          "id": "mat201.m2.wave_solutions",
+          "name": "Wave equation: possible solutions by separation of variables",
+          "keywords": [
+            "possible solutions",
+            "wave"
+          ]
+        },
+        {
+          "id": "mat201.m2.wave_problem",
+          "name": "Vibrating string problems (initial displacement/velocity, Fourier series)",
+          "keywords": [
+            "string",
+            "displacement",
+            "velocity",
+            "plucked"
+          ]
+        },
+        {
+          "id": "mat201.m2.dalembert",
+          "name": "D'Alembert's solution of the wave equation",
+          "keywords": [
+            "D'Alembert"
+          ]
+        },
+        {
+          "id": "mat201.m2.heat_derivation",
+          "name": "Heat equation: derivation and assumptions",
+          "keywords": [
+            "derive",
+            "heat equation",
+            "assumptions"
+          ]
+        },
+        {
+          "id": "mat201.m2.heat_solutions",
+          "name": "Heat equation: possible solutions by separation of variables",
+          "keywords": [
+            "possible solutions",
+            "heat"
+          ]
+        },
+        {
+          "id": "mat201.m2.heat_problem",
+          "name": "Heat flow in a rod problems (temperature distribution, steady state)",
+          "keywords": [
+            "rod",
+            "temperature",
+            "steady state",
+            "insulated"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 3,
+      "title": "Complex Variable: Differentiation",
+      "syllabus": "Complex functions, limit, continuity, derivative, analytic functions, Cauchy-Riemann equations, harmonic functions, harmonic conjugate; conformal mapping (w = z^2, e^z, 1/z, sin z), linear fractional transformations.",
+      "topics": [
+        {
+          "id": "mat201.m3.limit_continuity",
+          "name": "Limits and continuity of complex functions",
+          "keywords": [
+            "continuity",
+            "limit"
+          ]
+        },
+        {
+          "id": "mat201.m3.analytic_cr",
+          "name": "Analytic functions and Cauchy-Riemann equations",
+          "keywords": [
+            "analytic",
+            "Cauchy-Riemann",
+            "C-R",
+            "derivative"
+          ]
+        },
+        {
+          "id": "mat201.m3.harmonic",
+          "name": "Harmonic functions and harmonic conjugates (constructing analytic f)",
+          "keywords": [
+            "harmonic",
+            "conjugate",
+            "Milne"
+          ]
+        },
+        {
+          "id": "mat201.m3.analytic_proofs",
+          "name": "Properties and proofs of analytic functions",
+          "keywords": [
+            "show that",
+            "constant",
+            "prove"
+          ]
+        },
+        {
+          "id": "mat201.m3.conformal",
+          "name": "Conformal mapping: images under w = z^2, e^z, 1/z, sin z",
+          "keywords": [
+            "image",
+            "transformation",
+            "conformal",
+            "mapping"
+          ]
+        },
+        {
+          "id": "mat201.m3.bilinear",
+          "name": "Linear fractional (bilinear) transformations and fixed points",
+          "keywords": [
+            "bilinear",
+            "linear fractional",
+            "fixed points",
+            "maps the points"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 4,
+      "title": "Complex Variable: Integration",
+      "syllabus": "Line integrals in the complex plane (by indefinite integration and by path representation), Cauchy's integral theorem, Cauchy's integral formula, derivatives of analytic functions, Taylor and Maclaurin series.",
+      "topics": [
+        {
+          "id": "mat201.m4.line_integral",
+          "name": "Line integrals (path representation / indefinite integration)",
+          "keywords": [
+            "integral",
+            "along",
+            "path",
+            "|z|"
+          ]
+        },
+        {
+          "id": "mat201.m4.cauchy_theorem",
+          "name": "Cauchy's integral theorem",
+          "keywords": [
+            "Cauchy's integral theorem",
+            "simply connected"
+          ]
+        },
+        {
+          "id": "mat201.m4.cauchy_formula",
+          "name": "Cauchy's integral formula and derivatives of analytic functions",
+          "keywords": [
+            "Cauchy's integral formula",
+            "oint"
+          ]
+        },
+        {
+          "id": "mat201.m4.taylor",
+          "name": "Taylor and Maclaurin series",
+          "keywords": [
+            "Taylor",
+            "Maclaurin"
+          ]
+        }
+      ]
+    },
+    {
+      "no": 5,
+      "title": "Complex Variable: Residue Integration",
+      "syllabus": "Laurent series, zeros and singularities, residues, Cauchy's residue theorem, evaluation of real integrals.",
+      "topics": [
+        {
+          "id": "mat201.m5.laurent",
+          "name": "Laurent series (in given regions)",
+          "keywords": [
+            "Laurent"
+          ]
+        },
+        {
+          "id": "mat201.m5.singularities",
+          "name": "Zeros and singularities (classification)",
+          "keywords": [
+            "singularities",
+            "zeros",
+            "pole",
+            "essential"
+          ]
+        },
+        {
+          "id": "mat201.m5.residues",
+          "name": "Computing residues",
+          "keywords": [
+            "residue"
+          ]
+        },
+        {
+          "id": "mat201.m5.residue_theorem",
+          "name": "Cauchy's residue theorem: contour integrals",
+          "keywords": [
+            "residue theorem",
+            "oint"
+          ]
+        },
+        {
+          "id": "mat201.m5.real_trig",
+          "name": "Real integrals of trigonometric type (0 to 2pi)",
+          "keywords": [
+            "d\\theta",
+            "2\\pi",
+            "cos \\theta"
+          ]
+        },
+        {
+          "id": "mat201.m5.real_improper",
+          "name": "Improper real integrals (-inf to inf)",
+          "keywords": [
+            "\\infty",
+            "dx"
+          ]
+        }
+      ]
+    }
+  ]
+}

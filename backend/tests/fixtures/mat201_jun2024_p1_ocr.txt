@@ -1,0 +1,39 @@
+ Page 1 of 2
+header [111, 59, 130, 71]A
+header [384, 55, 603, 71]08000MAT201122301
+header [111, 102, 324, 118]Reg No.: ____
+header [566, 101, 621, 115]Name:
+header [255, 122, 721, 138]APJ ABDUL KALAM TECHNOLOGICAL UNIVERSITY
+header [78, 144, 955, 162]B.Tech Degree S3 (S,FE) / S1 (PT)(S) June 2024 (2019 Scheme)/S3 (WP)(R) December 2023 Examination
+title [416, 218, 623, 234]Course Code: MAT201
+title [225, 235, 816, 251]Course Name: Partial Differential Equations and Complex Analysis
+text [123, 254, 267, 269]Max. Marks: 100
+text [767, 251, 919, 266]Duration: 3 Hours
+title [480, 269, 560, 284]PART A
+title [308, 285, 752, 302]Answer all questions. Each question carries 3 marks
+text [863, 283, 919, 298]Marks
+text [151, 309, 905, 352]1 Form the partial differential equation by eliminating arbitrary function from the relation \( z = x - y + f(x^2 + y^2) \).
+text [151, 356, 905, 387]2 Solve by direct integration: \(\frac{\partial^2z}{\partial x\partial y} = \sin (3x + 4y)\). (3)
+text [151, 395, 905, 413]3 Write all possible solutions of one-dimensional wave equation. (3)
+text [151, 420, 905, 464]4 Write any three assumptions used in the derivation of one-dimensional heat equation. (3)
+text [151, 470, 905, 489]5 Check whether  \( f(z) = z - \bar{z} \)  is analytic or not. (3)
+text [151, 495, 905, 536]6 Test the continuity of  \( f(z) \)  at the point z = 0, where  \( f(z)=\left\{\begin{array}{l}\frac{lmz}{|z|}, z \neq 0 \\ 0, z = 0\end{array}\right. \)  (3)
+text [151, 546, 905, 592]7 Find the value of the integral \(\int_{C} z dz\) where \(C\) is the part of the unit circle from equation. (3)
+text [151, 598, 905, 620]8 Evaluate \(\oint_{C} \frac{\cos z}{z^2 + 9} dz\), where \(C\) is the circle \(|z| = 1\). (3)
+text [151, 626, 905, 671]9 Find the Laurent series expansion of \(\frac{1}{1 - z^2}\) about \(z = 0\) (3)
+text [151, 661, 905, 707]10 Find the singularities and nature of singularities of the function (3)
+ \( f(z) = z^{2} \)  is in the right half plane.
+text [151, 713, 905, 741]8 Evaluate \(\oint_{C} \frac{\cos z}{z^2 + 9} dz\), where \(C\) is the circle \(|z| = 1\). (3)
+text [151, 748, 905, 775]9 Find the Laurent series expansion of \(\frac{1}{1 - z^2}\) about \(z = 0\) (3)
+text [151, 781, 905, 800]10 Find the singularities and nature of singularities of the function (3)
+equation [214, 690, 905, 721]\[
+f (z) = z ^ {2} \cos \frac {1}{z} \quad \rightarrow
+\]
+title [486, 738, 565, 753]PART B
+title [182, 754, 865, 772]Answer any one full question from each module. Each question carries 14 marks
+title [500, 778, 585, 793]Module 1
+text [154, 801, 910, 821]11(a) Solve the PDE \( x(y^2 - z^2)p + y(z^2 - x^2)q = z(x^2 - y^2) \). (7)
+text [171, 826, 910, 855](b) Solve by Method of Separation of variable \(\frac{\partial u}{\partial x} + \frac{\partial u}{\partial t} = 0, u(x,0) = 4e^{-3x}\). (7)
+text [154, 861, 910, 880]12(a) Solve \( 2xz - px^2 - 2qxy + pq = 0 \). (7)
+text [171, 886, 910, 907](b) Solve \((y^{2} + z^{2})p - x y q = x z\) (7)
+page_number [457, 959, 550, 976]Page 1 of 2

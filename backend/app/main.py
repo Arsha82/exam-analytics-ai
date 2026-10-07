@@ -5,6 +5,7 @@ Creates the app, configures CORS, registers routers,
 and initializes the database on startup.
 """
 
+import asyncio
 import logging
 from contextlib import asynccontextmanager
 
@@ -27,8 +28,25 @@ async def lifespan(app: FastAPI):
     """Startup/shutdown lifecycle events."""
     logger.info("Starting PYQ Analyzer backend...")
     await init_db()
-    logger.info("Database tables initialized.")
+    logger.info("Database schema at latest migration.")
+
+    from app.services import course_pipeline as cp
+    from app.services.jobs import job_runner
+    from app.services.lessons import lesson_job, video_job
+    from app.services.library import search_job, sort_job
+    from app.services.scheduler import refresh_loop
+
+    for kind, fn in {
+        "acquire": cp.acquire_job, "process": cp.process_job, "insights": cp.insights_job,
+        "notes": cp.notes_job, "auto": cp.auto_job, "refresh": cp.refresh_job,
+        "catalog": cp.catalog_job, "setup": cp.setup_job, "lesson": lesson_job, "video": video_job,
+        "library_sort": sort_job, "library_search": search_job,
+    }.items():
+        job_runner.register(kind, fn)
+    await job_runner.recover_on_startup()
+    scheduler = asyncio.create_task(refresh_loop())
     yield
+    scheduler.cancel()
     logger.info("Shutting down PYQ Analyzer backend.")
 
 
@@ -37,7 +55,7 @@ def create_app() -> FastAPI:
     app = FastAPI(
         title=settings.app_name,
         description="Multi-Agent Question Paper Intelligence & Adaptive Testing System",
-        version="0.1.0",
+        version="0.2.0",
         lifespan=lifespan,
     )
 
@@ -57,6 +75,7 @@ def create_app() -> FastAPI:
 
     # ── Routers ──
     from app.routers import papers, questions, syllabus, analysis, predictions, attempts, mastery, pipeline
+    from app.routers import courses, jobs, library, profile, study, system
 
     app.include_router(papers.router, prefix="/api/papers", tags=["Papers"])
     app.include_router(questions.router, prefix="/api/questions", tags=["Questions"])
@@ -66,6 +85,12 @@ def create_app() -> FastAPI:
     app.include_router(attempts.router, prefix="/api/attempts", tags=["Attempts"])
     app.include_router(mastery.router, prefix="/api/mastery", tags=["Mastery"])
     app.include_router(pipeline.router, prefix="/api/pipeline", tags=["Pipeline"])
+    app.include_router(courses.router, prefix="/api/courses", tags=["Courses (v2)"])
+    app.include_router(jobs.router, prefix="/api/jobs", tags=["Jobs (v2)"])
+    app.include_router(system.router, prefix="/api/system", tags=["System (v2)"])
+    app.include_router(profile.router, prefix="/api/profile", tags=["Profile & academics (v2)"])
+    app.include_router(library.router, prefix="/api/library", tags=["Library (v2)"])
+    app.include_router(study.router, prefix="/api/study", tags=["Practice & lessons (v2)"])
 
     # ── Health check ──
     @app.get("/api/health", tags=["Health"])
@@ -73,7 +98,7 @@ def create_app() -> FastAPI:
         return {
             "status": "healthy",
             "service": settings.app_name,
-            "version": "0.1.0",
+            "version": "0.2.0",
         }
 
     return app

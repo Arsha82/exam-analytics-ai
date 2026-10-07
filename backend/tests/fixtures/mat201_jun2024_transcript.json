@@ -1,0 +1,316 @@
+{
+ "header": {
+  "course_code": "MAT201",
+  "course_name": "Partial Differential Equations and Complex Analysis",
+  "exam_title": "B.Tech Degree S3 (S,FE) / S1 (PT)(S) June 2024 (2019 Scheme)/S3 (WP)(R/S) December 2023 Examination",
+  "month": "June",
+  "year": 2024,
+  "scheme": "2019 Scheme",
+  "qp_code": "08000MAT201122301",
+  "max_marks": 100,
+  "duration": "3 Hours"
+ },
+ "questions": [
+  {
+   "part": "A",
+   "module": null,
+   "number": 1,
+   "sub": null,
+   "marks": 3,
+   "text": "Form the partial differential equation by eliminating arbitrary function from the relation $z = x - y + f(x^2 + y^2)$.",
+   "has_diagram": false,
+   "legibility": "clear"
+  },
+  {
+   "part": "A",
+   "module": null,
+   "number": 2,
+   "sub": null,
+   "marks": 3,
+   "text": "Solve by direct integration: $\\frac{\\partial^2 z}{\\partial x \\partial y} = \\sin(3x + 4y)$.",
+   "has_diagram": false,
+   "legibility": "clear"
+  },
+  {
+   "part": "A",
+   "module": null,
+   "number": 3,
+   "sub": null,
+   "marks": 3,
+   "text": "Write all possible solutions of one-dimensional wave equation.",
+   "has_diagram": false,
+   "legibility": "clear"
+  },
+  {
+   "part": "A",
+   "module": null,
+   "number": 4,
+   "sub": null,
+   "marks": 3,
+   "text": "Write any three assumptions used in the derivation of one-dimensional heat equation.",
+   "has_diagram": false,
+   "legibility": "clear"
+  },
+  {
+   "part": "A",
+   "module": null,
+   "number": 5,
+   "sub": null,
+   "marks": 3,
+   "text": "Check whether $f(z) = z - \\bar{z}$ is analytic or not.",
+   "has_diagram": false,
+   "legibility": "clear"
+  },
+  {
+   "part": "A",
+   "module": null,
+   "number": 6,
+   "sub": null,
+   "marks": 3,
+   "text": "Test the continuity of $f(z)$ at the point $z = 0$, where $f(z) = \\begin{cases} \\frac{\\text{Im } z}{|z|}, & z \\neq 0 \\\\ 0, & z = 0 \\end{cases}$",
+   "has_diagram": false,
+   "legibility": "clear"
+  },
+  {
+   "part": "A",
+   "module": null,
+   "number": 7,
+   "sub": null,
+   "marks": 3,
+   "text": "Find the value of the integral $\\int_C z \\, dz$ where C is the part of the unit circle from $-i$ to $i$ in the right half plane.",
+   "has_diagram": false,
+   "legibility": "clear"
+  },
+  {
+   "part": "A",
+   "module": null,
+   "number": 8,
+   "sub": null,
+   "marks": 3,
+   "text": "Evaluate $\\oint_C \\frac{\\cos z}{z^2 + 9} \\, dz$, where C is the circle $|z| = 1$.",
+   "has_diagram": false,
+   "legibility": "clear"
+  },
+  {
+   "part": "A",
+   "module": null,
+   "number": 9,
+   "sub": null,
+   "marks": 3,
+   "text": "Find the Laurent series expansion of $\\frac{1}{1 - z^2}$ about $z = 0$",
+   "has_diagram": false,
+   "legibility": "clear"
+  },
+  {
+   "part": "A",
+   "module": null,
+   "number": 10,
+   "sub": null,
+   "marks": 3,
+   "text": "Find the singularities and nature of singularities of the function $f(z) = z^2 \\cos \\frac{1}{z}$",
+   "has_diagram": false,
+   "legibility": "clear"
+  },
+  {
+   "part": "B",
+   "module": 1,
+   "number": 11,
+   "sub": "a",
+   "marks": 7,
+   "text": "Solve the PDE $x(y^2 - z^2)p + y(z^2 - x^2)q = z(x^2 - y^2)$.",
+   "has_diagram": false,
+   "legibility": "clear"
+  },
+  {
+   "part": "B",
+   "module": 1,
+   "number": 11,
+   "sub": "b",
+   "marks": 7,
+   "text": "Solve by Method of Separation of variable $\\frac{\\partial u}{\\partial x} + \\frac{\\partial u}{\\partial t} = 0, u(x,0) = 4e^{-3x}$.",
+   "has_diagram": false,
+   "legibility": "clear"
+  },
+  {
+   "part": "B",
+   "module": 1,
+   "number": 12,
+   "sub": "a",
+   "marks": 7,
+   "text": "Solve $2xz - px^2 - 2qxy + pq = 0$.",
+   "has_diagram": false,
+   "legibility": "clear"
+  },
+  {
+   "part": "B",
+   "module": 1,
+   "number": 12,
+   "sub": "b",
+   "marks": 7,
+   "text": "Solve $(y^2 + z^2)p - xyq = xz$",
+   "has_diagram": false,
+   "legibility": "clear"
+  },
+  {
+   "part": "B",
+   "module": 2,
+   "number": 13,
+   "sub": "a",
+   "marks": 7,
+   "text": "A tightly stretched string with fixed end points. con $x = 0$ and $x = l$ is initially at rest in its equilibrium position. If it is vibrating by giving each of its points a velocity $\\lambda x(l - x)$. Find th a displacement of the string at any distance $x$ from one end at any time $t$.",
+   "has_diagram": false,
+   "legibility": "partly_unclear"
+  },
+  {
+   "part": "B",
+   "module": 2,
+   "number": 13,
+   "sub": "b",
+   "marks": 7,
+   "text": "Derive One Dimensional Wave equation.",
+   "has_diagram": false,
+   "legibility": "clear"
+  },
+  {
+   "part": "B",
+   "module": 2,
+   "number": 14,
+   "sub": "a",
+   "marks": 7,
+   "text": "Derive all possible solutions of one-dimensional wave equation.",
+   "has_diagram": false,
+   "legibility": "clear"
+  },
+  {
+   "part": "B",
+   "module": 2,
+   "number": 14,
+   "sub": "b",
+   "marks": 7,
+   "text": "Find the temperature $u(x,t)$ in a homogeneous rod of length 2m, whose ends are kept at $0^\\circ\\text{c}$ and whose initial temperature is given by $f(x) = 100(2x - x^2), 0 \\le x \\le 2$",
+   "has_diagram": false,
+   "legibility": "clear"
+  },
+  {
+   "part": "B",
+   "module": 3,
+   "number": 15,
+   "sub": "a",
+   "marks": 7,
+   "text": "Show that $f(z) = e^z$ is analytic for all z in the complex plane and find its derivative.",
+   "has_diagram": false,
+   "legibility": "clear"
+  },
+  {
+   "part": "B",
+   "module": 3,
+   "number": 15,
+   "sub": "b",
+   "marks": 7,
+   "text": "Find image of the circle $|z - \\frac{1}{2}| \\le \\frac{1}{2}$ under the transformation $w = \\frac{1}{z}$.",
+   "has_diagram": false,
+   "legibility": "clear"
+  },
+  {
+   "part": "B",
+   "module": 3,
+   "number": 16,
+   "sub": "a",
+   "marks": 7,
+   "text": "Show that the function $u = \\cos x \\cosh y$ is harmonic and find its harmonic conjugate.",
+   "has_diagram": false,
+   "legibility": "clear"
+  },
+  {
+   "part": "B",
+   "module": 3,
+   "number": 16,
+   "sub": "b",
+   "marks": 7,
+   "text": "Show that an analytic function $f(z) = u + iv$ is constant if $|f(z)|$ is constant",
+   "has_diagram": false,
+   "legibility": "clear"
+  },
+  {
+   "part": "B",
+   "module": 4,
+   "number": 17,
+   "sub": "a",
+   "marks": 7,
+   "text": "Evaluate $\\int_C \\frac{2z+1}{z^2 - 2z} \\, dz$ where $|z| = 1$.",
+   "has_diagram": false,
+   "legibility": "clear"
+  },
+  {
+   "part": "B",
+   "module": 4,
+   "number": 17,
+   "sub": "b",
+   "marks": 7,
+   "text": "Find the Taylor series expansion of $f(z) = \\sin 2z$ about $z = \\frac{\\pi}{2}$.",
+   "has_diagram": false,
+   "legibility": "clear"
+  },
+  {
+   "part": "B",
+   "module": 4,
+   "number": 18,
+   "sub": "a",
+   "marks": 7,
+   "text": "Evaluate $\\int_C |z| \\, dz$ where C is the part of the circle $|z| = 3$ from 3 to $-3$ in the upper half plane.",
+   "has_diagram": false,
+   "legibility": "clear"
+  },
+  {
+   "part": "B",
+   "module": 4,
+   "number": 18,
+   "sub": "b",
+   "marks": 7,
+   "text": "Evaluate $\\int_C \\frac{e^{3z}}{(z+1)^4} \\, dz$ where C is the circle $|z - 1| = 3$.",
+   "has_diagram": false,
+   "legibility": "clear"
+  },
+  {
+   "part": "B",
+   "module": 5,
+   "number": 19,
+   "sub": "a",
+   "marks": 7,
+   "text": "Find Laurent series expansion $f(z) = \\frac{-2z+3}{(z^2-3z+2)}$ valid in\ni. $1 \\le |z| \\le 2$\nii. $|z| \\ge 2$",
+   "has_diagram": false,
+   "legibility": "clear"
+  },
+  {
+   "part": "B",
+   "module": 5,
+   "number": 19,
+   "sub": "b",
+   "marks": 7,
+   "text": "Evaluate $\\oint_c \\frac{e^z}{z^2(z+1)} \\, dz$ over the circle $|z| = 2$",
+   "has_diagram": false,
+   "legibility": "partly_unclear"
+  },
+  {
+   "part": "B",
+   "module": 5,
+   "number": 20,
+   "sub": "a",
+   "marks": 7,
+   "text": "Evaluate $\\int_C \\tan z \\, dz$ where C is circle $|z| = 2$.",
+   "has_diagram": false,
+   "legibility": "clear"
+  },
+  {
+   "part": "B",
+   "module": 5,
+   "number": 20,
+   "sub": "b",
+   "marks": 7,
+   "text": "Evaluate $\\int_0^{2\\pi} \\frac{d\\theta}{\\sqrt{2} - \\cos \\theta}$",
+   "has_diagram": false,
+   "legibility": "clear"
+  }
+ ],
+ "notes": "Part A instructions: Answer all questions. Each question carries 3 marks. Part B instructions: Answer any one full question from each module. Each question carries 14 marks. Printing anomalies: In 13(a), the paper literally prints 'points. con x = 0' and 'th a displacement'. In 18, the sub-question label '(b)' and its marks '(7)' are printed on the line of 'upper half plane.' (the second line of 18(a)), while the text of 18(b) is printed on the next line without an explicit label or marks. In 19(b), there is a small rectangular placeholder/artifact printed above e^z."
+}
