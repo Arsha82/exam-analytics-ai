@@ -1,0 +1,56 @@
+/* Lesson player — a slide on paper, narration below like subtitles. */
+.player { display: flex; flex-direction: column; gap: var(--space-3); }
+.stage {
+  position: relative; aspect-ratio: 16 / 9; width: 100%; overflow: hidden;
+  background: var(--paper-raised); border: 1px solid var(--rule); border-radius: var(--radius-lg);
+  padding: clamp(18px, 4%, 44px) clamp(20px, 6%, 64px);
+  display: flex; flex-direction: column;
+}
+.stageMeta {
+  display: flex; justify-content: space-between; font-family: var(--font-mono); font-size: 11px;
+  color: var(--ink-3); text-transform: uppercase; letter-spacing: 0.06em;
+}
+.slide { flex: 1; display: flex; flex-direction: column; justify-content: center; gap: clamp(8px, 2.2%, 18px); }
+.heading {
+  font-family: var(--font-display); font-size: clamp(20px, 3.2vw, 34px); font-weight: 520; line-height: 1.15;
+  padding-left: 16px; border-left: 3px solid var(--red);
+}
+.titleHeading { composes: heading; font-size: clamp(26px, 4.4vw, 48px); font-weight: 480; letter-spacing: -0.02em; }
+.display { color: var(--blue); font-size: clamp(16px, 2.2vw, 24px); text-align: center; overflow-x: auto; padding: 4px 0; }
+.bullets, .steps { margin: 0; padding-left: 22px; display: flex; flex-direction: column; gap: clamp(4px, 1.2%, 10px);
+  font-size: clamp(13px, 1.75vw, 19px); color: var(--ink-2); line-height: 1.4; }
+.bullets li::marker { color: var(--red); }
+.steps { list-style: decimal; }
+.steps li::marker { font-family: var(--font-mono); color: var(--red); font-size: 0.85em; }
+.ref { font-family: var(--font-display); font-style: italic; font-size: clamp(11px, 1.3vw, 14px); color: var(--ink-3); }
+.progressTrack { position: absolute; left: 0; right: 0; bottom: 0; height: 3px; background: var(--paper-sunken); }
+.progressFill { height: 100%; background: var(--red); transition: width var(--duration-slow) var(--ease-out); }
+
+.caption {
+  min-height: 3.2em; font-size: var(--text-sm); color: var(--ink-2); line-height: 1.5;
+  padding: var(--space-2) var(--space-3); border-left: 2px solid var(--rule-strong); background: var(--paper-sunken);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+
+.controls { display: flex; align-items: center; gap: var(--space-2); flex-wrap: wrap; }
+.spacer { flex: 1; }
+.ctrl {
+  width: 34px; height: 32px; border-radius: var(--radius-sm); border: 1px solid var(--rule); background: var(--paper-raised);
+  color: var(--ink); cursor: pointer; font-family: var(--font-mono);
+}
+.ctrl:disabled { opacity: 0.4; cursor: default; }
+.play {
+  height: 32px; padding: 0 14px; border-radius: var(--radius-sm); border: 1px solid var(--ink); background: var(--ink);
+  color: var(--paper-raised); cursor: pointer; font-weight: 600; font-size: var(--text-sm);
+}
+.play:disabled { opacity: 0.5; }
+.dots { display: flex; gap: 4px; margin-left: var(--space-2); flex-wrap: wrap; }
+.dot { width: 18px; height: 6px; border-radius: 3px; border: none; background: var(--rule-strong); cursor: pointer; padding: 0; }
+.dotActive { composes: dot; background: var(--red); }
+.small { display: inline-flex; align-items: center; gap: 6px; font-size: var(--text-xs); color: var(--ink-3); }
+.small select { font-size: var(--text-xs); padding: 2px 4px; border: 1px solid var(--rule); border-radius: var(--radius-sm); background: var(--paper-raised); color: var(--ink); max-width: 180px; }
+
+.quiz { border: 1px solid var(--rule); border-radius: var(--radius-md); padding: var(--space-3) var(--space-4); background: var(--paper-raised); }
+.quiz summary { cursor: pointer; font-weight: 600; font-size: var(--text-sm); }
+.quiz ol { margin: var(--space-3) 0 0; padding-left: 20px; display: flex; flex-direction: column; gap: var(--space-2); font-size: var(--text-sm); }
+.answer summary { font-weight: 500; color: var(--blue); font-size: var(--text-xs); margin-top: 2px; }

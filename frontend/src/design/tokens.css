@@ -1,0 +1,198 @@
+/*
+ * PYQ Analyzer — Design tokens ("Paper & Ink")
+ *
+ * The product is about exam papers, so the interface borrows from them: warm paper
+ * surfaces, ink-coloured text, hairline rules instead of shadows, an ink-blue for
+ * actions and data, and the examiner's red pen reserved for things that need attention.
+ * Display type is Fraunces (a bookish serif with optical sizes), UI type is Instrument
+ * Sans, codes/question numbers/data are JetBrains Mono.
+ *
+ * Names kept from v1 (--surface-*, --text-*, --accent-*) so older pages restyle too.
+ */
+
+:root {
+  /* ── Paper ── */
+  --paper: #f3efe6;            /* app background */
+  --paper-raised: #fbf9f4;     /* cards, panels */
+  --paper-sunken: #ebe5d8;     /* wells, tracks, code */
+  --paper-hover: #f6f2e9;
+  --rule: #ddd5c5;             /* hairlines */
+  --rule-strong: #c6bba6;
+
+  /* ── Ink ── */
+  --ink: #1d1b16;
+  --ink-2: #4b463c;
+  --ink-3: #857e70;
+  --ink-inverse: #fbf9f4;
+
+  /* ── Accents ── */
+  --blue: #1f4a73;             /* actions, data */
+  --blue-hover: #173a5c;
+  --blue-soft: rgba(31, 74, 115, 0.09);
+  --blue-softer: rgba(31, 74, 115, 0.045);
+  --red: #b4361f;              /* examiner's pen: flags, errors, emphasis */
+  --red-soft: rgba(180, 54, 31, 0.09);
+  --green: #2f6b45;
+  --green-soft: rgba(47, 107, 69, 0.1);
+  --ochre: #9c6510;
+  --ochre-soft: rgba(156, 101, 16, 0.1);
+
+  /* Data scale (heatmap): paper → ink blue, 6 steps */
+  --scale-0: #ebe5d8;
+  --scale-1: #d9e0e2;
+  --scale-2: #b5c6d3;
+  --scale-3: #89a6bf;
+  --scale-4: #557fa3;
+  --scale-5: #1f4a73;
+
+  /* ── v1 compatible aliases ── */
+  --surface-0: var(--paper);
+  --surface-1: var(--paper-raised);
+  --surface-2: var(--paper-sunken);
+  --surface-3: #e2dbcc;
+  --surface-sidebar: #efeadf;
+  --surface-border: var(--rule);
+  --surface-border-strong: var(--rule-strong);
+  --text-primary: var(--ink);
+  --text-secondary: var(--ink-2);
+  --text-tertiary: var(--ink-3);
+  --text-inverse: var(--ink-inverse);
+  --text-link: var(--blue);
+  --accent-primary: var(--blue);
+  --accent-primary-hover: var(--blue-hover);
+  --accent-primary-soft: var(--blue-soft);
+  --accent-primary-softer: var(--blue-softer);
+  --accent-success: var(--green);
+  --accent-success-soft: var(--green-soft);
+  --accent-warning: var(--ochre);
+  --accent-warning-soft: var(--ochre-soft);
+  --accent-danger: var(--red);
+  --accent-danger-soft: var(--red-soft);
+  --accent-info: var(--blue);
+  --accent-info-soft: var(--blue-soft);
+
+  --chart-1: #1f4a73;
+  --chart-2: #b4361f;
+  --chart-3: #2f6b45;
+  --chart-4: #9c6510;
+  --chart-5: #5b6f8a;
+  --chart-6: #7a4a6e;
+  --chart-7: #3e7f86;
+  --chart-8: #8a7a55;
+
+  /* ── Type ── */
+  --font-display: 'Fraunces Variable', 'Iowan Old Style', Georgia, serif;
+  --font-body: 'Instrument Sans Variable', 'Segoe UI', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono Variable', 'Cascadia Code', Consolas, monospace;
+  --font-heading: var(--font-display);
+
+  --text-xs: 0.75rem;     /* 12 */
+  --text-sm: 0.8125rem;   /* 13 */
+  --text-base: 0.875rem;  /* 14 */
+  --text-lg: 1rem;        /* 16 */
+  --text-xl: 1.25rem;     /* 20 */
+  --text-2xl: 1.625rem;   /* 26 */
+  --text-3xl: 2.25rem;    /* 36 */
+  --text-4xl: 3rem;       /* 48 */
+
+  --leading-tight: 1.2;
+  --leading-normal: 1.55;
+  --leading-relaxed: 1.75;
+  --tracking-caps: 0.09em;
+
+  /* ── Space (4px grid) ── */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+
+  /* ── Shape: paper is not rounded ── */
+  --radius-sm: 3px;
+  --radius-md: 5px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+  --radius-full: 9999px;
+
+  /* ── Elevation: almost none, rules do the work ── */
+  --shadow-xs: none;
+  --shadow-sm: 0 1px 0 rgba(29, 27, 22, 0.04);
+  --shadow-md: 0 1px 0 rgba(29, 27, 22, 0.05), 0 6px 16px -10px rgba(29, 27, 22, 0.18);
+  --shadow-lg: 0 18px 40px -20px rgba(29, 27, 22, 0.28);
+  --shadow-xl: 0 28px 60px -24px rgba(29, 27, 22, 0.32);
+  --shadow-card: 0 1px 0 rgba(29, 27, 22, 0.035);
+  --shadow-focus: 0 0 0 2px var(--paper), 0 0 0 4px rgba(31, 74, 115, 0.45);
+
+  /* ── Motion ── */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-spring: cubic-bezier(0.34, 1.4, 0.64, 1);
+  --duration-fast: 120ms;
+  --duration-normal: 200ms;
+  --duration-slow: 360ms;
+
+  /* ── Layout ── */
+  --sidebar-width: 232px;
+  --sidebar-collapsed-width: 64px;
+  --topbar-height: 52px;
+  --content-max-width: 1240px;
+
+  color-scheme: light;
+}
+
+/* ── Night desk (dark) ── */
+[data-theme='dark'] {
+  --paper: #13120f;
+  --paper-raised: #1b1915;
+  --paper-sunken: #0f0e0b;
+  --paper-hover: #211f1a;
+  --rule: #2e2a23;
+  --rule-strong: #403b31;
+
+  --ink: #ece6d8;
+  --ink-2: #b7ae9c;
+  --ink-3: #7f7868;
+  --ink-inverse: #13120f;
+
+  --blue: #8fb4da;
+  --blue-hover: #a9c6e4;
+  --blue-soft: rgba(143, 180, 218, 0.12);
+  --blue-softer: rgba(143, 180, 218, 0.06);
+  --red: #e0745d;
+  --red-soft: rgba(224, 116, 93, 0.13);
+  --green: #7fb98f;
+  --green-soft: rgba(127, 185, 143, 0.12);
+  --ochre: #d9a14a;
+  --ochre-soft: rgba(217, 161, 74, 0.12);
+
+  --scale-0: #1f1d18;
+  --scale-1: #22303b;
+  --scale-2: #2b4459;
+  --scale-3: #3c6182;
+  --scale-4: #5b86ad;
+  --scale-5: #8fb4da;
+
+  --surface-3: #26231d;
+  --surface-sidebar: #171511;
+
+  --chart-1: #8fb4da;
+  --chart-2: #e0745d;
+  --chart-3: #7fb98f;
+  --chart-4: #d9a14a;
+  --chart-5: #9aa9bd;
+  --chart-6: #c08db4;
+  --chart-7: #7fc0c6;
+  --chart-8: #c4b38a;
+
+  --shadow-sm: none;
+  --shadow-md: 0 8px 22px -12px rgba(0, 0, 0, 0.6);
+  --shadow-lg: 0 18px 40px -18px rgba(0, 0, 0, 0.7);
+  --shadow-card: none;
+  --shadow-focus: 0 0 0 2px var(--paper), 0 0 0 4px rgba(143, 180, 218, 0.5);
+
+  color-scheme: dark;
+}

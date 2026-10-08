@@ -1,0 +1,5 @@
+/* Adapted from React Bits (https://reactbits.dev) — MIT + Commons Clause.
+   The motion value drives background-position; no competing CSS animation here. */
+.shiny-text {
+  display: inline-block;
+}
