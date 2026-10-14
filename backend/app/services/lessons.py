@@ -224,9 +224,22 @@ $s.Dispose()
 
 
 def tts_to_wav(text: str, out: Path, voice: str = "Microsoft Zira Desktop", rate: int = 0) -> float:
-    """Local narration with the Windows speech engine. Returns the duration in seconds."""
+    """Local narration (Windows speech engine; espeak-ng on Linux, `say` on macOS). Returns seconds."""
+    import shutil
+    import sys
+
     txt = out.with_suffix(".txt")
     txt.write_text(text, encoding="utf-8")
+    if sys.platform != "win32":
+        if sys.platform == "darwin" and shutil.which("say"):
+            cmd = ["say", "-f", str(txt), "-o", str(out), "--file-format=WAVE", "--data-format=LEI16@22050"]
+        elif shutil.which("espeak-ng"):
+            cmd = ["espeak-ng", "-f", str(txt), "-w", str(out), "-s", str(170 + 10 * rate)]
+        else:
+            raise RuntimeError("no speech engine found: install espeak-ng (Linux) to export lesson videos")
+        subprocess.run(cmd, capture_output=True, timeout=180, check=True)
+        with wave.open(str(out), "rb") as w:
+            return w.getnframes() / float(w.getframerate())
     script = out.with_suffix(".ps1")
     script.write_text(_PS_TTS, encoding="utf-8")
     env = {**__import__("os").environ, "PYQ_VOICE": voice, "PYQ_RATE": str(rate), "PYQ_OUT": str(out), "PYQ_TEXT": str(txt)}

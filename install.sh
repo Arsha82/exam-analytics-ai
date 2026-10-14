@@ -44,7 +44,7 @@ pkg_hint() {  # how to install a missing system tool
 
 export PATH="$HOME/.local/bin:$HOME/.cargo/bin:$PATH"
 
-# ── 1. tools ──
+# -- 1. tools --
 step "Checking tools"
 if ! have uv; then
   echo "    installing uv (Python manager) from astral.sh..."
@@ -77,9 +77,12 @@ else
   warn "agy CLI not found: the app works local-only (uploads, DSpace, local OCR);"
   warn "web search and repair of hard scans need the Antigravity 'agy' CLI on PATH, signed in."
 fi
-case "$OS" in MINGW*|MSYS*|CYGWIN*) ;; *) warn "lesson narration in MP4 export uses Windows voices (SAPI); on $OS lessons play in the browser only" ;; esac
+case "$OS" in
+  MINGW*|MSYS*|CYGWIN*|Darwin) ;;
+  *) have espeak-ng && ok "espeak-ng (lesson narration)" || warn "espeak-ng missing - lesson MP4 export needs it: $(pkg_hint espeak-ng espeak-ng)" ;;
+esac
 
-# ── 2. backend ──
+# -- 2. backend --
 step "Backend: Python 3.12 virtual environment + packages"
 if [ -x "$BACKEND/.venv/bin/python" ]; then PY="$BACKEND/.venv/bin/python"
 elif [ -x "$BACKEND/.venv/Scripts/python.exe" ]; then PY="$BACKEND/.venv/Scripts/python.exe"
@@ -89,18 +92,17 @@ else
 fi
 uv pip install --python "$PY" -r "$BACKEND/pyproject.toml" --extra dev
 "$PY" -c "import fastapi, sqlalchemy, pypdfium2, matplotlib" && ok "backend packages import"
-if [ ! -f "$BACKEND/.env" ]; then
-  printf '%s\n' "# Local overrides for backend/app/config.py (any setting can be set here)" \
-    "# OLLAMA_BASE_URL=http://127.0.0.1:11434" "# AGY_BIN=agy" > "$BACKEND/.env"
-  ok "created backend/.env (all settings optional)"
+if [ ! -f "$BACKEND/.env" ] && [ -f "$BACKEND/.env.example" ]; then
+  cp "$BACKEND/.env.example" "$BACKEND/.env"
+  ok "created backend/.env from .env.example (all settings optional)"
 fi
 
-# ── 3. frontend ──
+# -- 3. frontend --
 step "Frontend: npm packages"
 ( cd "$FRONTEND" && if [ -f package-lock.json ]; then npm ci --no-fund --no-audit; else npm install --no-fund --no-audit; fi )
 ok "frontend packages"
 
-# ── 4. models ──
+# -- 4. models --
 if [ "$SKIP_MODELS" = 1 ]; then
   step "Skipping model download (--skip-models)"
 else
@@ -120,7 +122,7 @@ else
   done
 fi
 
-# ── 5. check ──
+# -- 5. check --
 if [ "$RUN_TESTS" = 1 ]; then
   step "Backend tests"
   ( cd "$BACKEND" && "$PY" -m pytest -q )

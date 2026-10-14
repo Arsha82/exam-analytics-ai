@@ -421,7 +421,9 @@ Structured revision notes distill complex proofs, core equations, and key theory
 
 The repository includes a PowerShell installer (`install.ps1`) that provisions missing prerequisites (via `winget` and `astral.sh/uv`), configures Python 3.12 virtual environments, installs npm packages, starts Ollama, and pulls required models.
 
-Open PowerShell as Administrator or standard user and run:
+**Easiest:** double-click **`install.cmd`**, then **`start-app.cmd`** (and **`stop-app.cmd`** to stop). The `.cmd` launchers bypass the PowerShell execution policy and keep the window open, so you can read any message. Setup output is also saved to `install.log`; app logs go to `.run\`. The project can live in any folder or drive: every path is relative to the project folder.
+
+Or open PowerShell (no Administrator needed) and run:
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\install.ps1
